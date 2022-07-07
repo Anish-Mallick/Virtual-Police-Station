@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index0.css">
+</head>
+<body>
+    <div class="heading">
+        <h1> connect us virtually</h1>
+        
+    </div>
+    <div class="body_part">
+        <table cellspacing="45" cellpadding="95">
+            <td>
+                <script>
+                    var stateObject = {
+                    "Tamil Nadu": { "Chennai": ["Tamil Nadu Special Police Station Vasantham Nagar", "T1 Ambattur Police Station", "Thirumullaivoyal T10 Police Station"],
+                    "Madurai": ["Tallakulam Police Station", "C2 Subramaniyapuram Police Station"],
+                    "Goa": ["North Goa", "South Goa"],
+                    },
+                    "Australia": {
+                    "South Australia": ["Dunstan", "Mitchell"],
+                    "Victoria": ["Altona", "Euroa"]
+                    }, "Canada": {
+                    "Alberta": ["Acadia", "Bighorn"],
+                    "Columbia": ["Washington", ""]
+                    },
+                    }
+                    window.onload = function () {
+                    var countySel = document.getElementById("countySel"),
+                    stateSel = document.getElementById("stateSel"),
+                    districtSel = document.getElementById("districtSel");
+                    for (var country in stateObject) {
+                    countySel.options[countySel.options.length] = new Option(country, country);
+                    }
+                    countySel.onchange = function () {
+                    stateSel.length = 1; // remove all options bar first
+                    districtSel.length = 1; // remove all options bar first
+                    if (this.selectedIndex < 1) return; // done 
+                    for (var state in stateObject[this.value]) {
+                    stateSel.options[stateSel.options.length] = new Option(state, state);
+                    }
+                    }
+                    countySel.onchange(); // reset in case page is reloaded
+                    stateSel.onchange = function () {
+                    districtSel.length = 1; // remove all options bar first
+                    if (this.selectedIndex < 1) return; // done 
+                    var district = stateObject[countySel.value][this.value];
+                    for (var i = 0; i < district.length; i++) {
+                    districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+                    }
+                    }
+                    }
+                    </script>
+                    </head>
+                    <body>
+                    <form name="myform" id="myForm" action="index.html" >
+                    Select State: <select name="state" id="countySel" size="1">
+                    <option value="" selected="selected">Select State</option>
+                    </select>
+                    <br>
+                    <br>
+                    Select City: <select name="countrya" id="stateSel" size="1">
+                    <option value="" selected="selected">Please select state first</option>
+                    </select>
+                    <br>
+                    <br>
+                    Select Police Station: <select name="district" id="districtSel" size="1">
+                    <option value="" selected="selected">Please select city first</option>
+                    </select><br>
+                        <input type="submit" value="Go">
+                    <closeform></closeform></form>
+            </td>
+            <td>
+                
+                <div class="card">
+                    <ul>
+                        <h2>Notice Board</h2>
+                    </ul>
+                    <marquee behavior="" direction="up">
+                    <div> 
+                        <ul>
+                            from tommorow full lockdown
+                        </ul>
+                        <ul>
+                            wear mask else 1000 fine
+                        </ul>
+                        <ul>
+                            wear helmet while driving
+                        </ul>
+    
+                    </div>
+                </marquee>
+                </div>
+            </td>
+        </table>
+    </div>
+</body>
+</html>

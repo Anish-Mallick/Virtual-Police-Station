@@ -1,0 +1,13 @@
+*{
+    background-color: #a9f1df;
+}
+.heading{
+text-align: center;
+/*font-family: 'Pattaya', sans-serif;*/
+font-family: 'Dancing Script', cursive;
+font-size: 5rem;
+}
+.body_part{
+    align-items: center;
+    
+}

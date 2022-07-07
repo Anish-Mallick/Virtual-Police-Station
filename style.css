@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+*{
+    margin: 18px;
+    padding: 0;
+}
+.fir{
+    max-width: 50%;
+    background-color: rgb(171 225 238);
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+h1{
+    text-align: center;
+    
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+p{
+    background-color: rgb(26, 27, 27);
+    font-size: 25px;
+    margin: 15px;
+    border: 2px solid black;
+    color: cornsilk;
+    border-radius: 8px;
+}
+input, textarea,label{
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+select{
+    display: block;
+    margin: 10px;
+    font-size: 17px;
+    width: 60%;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+input, textarea,select{
+    outline: none;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.data:after {
+    content:" *";
+    color: rgb(238, 26, 26);
+}
+.btn{
+    margin: 5px auto;
+    display: block;
+    padding: 5px 12px;
+    background-color: rgb(230 242 163);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhaina 2', cursive;
+    cursor: pointer;
+    outline: none;
+    width: 105px;
+}
+
+
+
